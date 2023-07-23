@@ -14,10 +14,42 @@ public class CustomerRepository : ICustomerRepository
         _db = new MySqlConnection(connectionString.Value.ProjectConnection);
     }
 
-    //FAZER UMA ROTA PRA RETORNAR PELO PAIS
-    public async Task<Customer> FindById(Guid id) =>
-        await _db.QuerySingleOrDefaultAsync<Customer>("select * from customers where id = @Id", new { Id = id });
+    public async Task<List<CustomerDto>> FindByCountry(string country) {
+        string query = @"select 
+                            c.id,
+                            c.name, 
+                            c.email,
+                            a.id as addressId,
+                            a.street, 
+                            a.city, 
+                            a.state, 
+                            a.postalCode,
+                            a.country
+                        from customers c
+                        inner join addresses a
+                        on c.id = a.customerId
+                        where a.country = @Country";
 
-    public async Task<IEnumerable<Customer>> FindAll() =>
-        await _db.QueryAsync<Customer>("select * from customers");
+       var customersByCountry = await _db.QueryAsync<CustomerDto>(query, new { Country = country });
+       return customersByCountry.ToList();
+    }
+
+    public async Task<List<CustomerDto>> FindAll() {
+            string query = @"select 
+                                c.id,
+                                c.name, 
+                                c.email,
+                                a.id as addressId,
+                                a.street, 
+                                a.city, 
+                                a.state, 
+                                a.postalCode,
+                                a.country
+                            from customers c
+                            inner join addresses a
+                            on c.id = a.customerId";
+
+            var customers = await _db.QueryAsync<CustomerDto>(query);
+            return customers.ToList();
+    }
 }

@@ -5,11 +5,13 @@ USE customer_db;
 -- Insert in customers
 INSERT INTO customers (id, name, email)
 VALUES
-    ('62e44498-c817-417b-91b6-9ab2e691e2e5', 'John Doe', 'john.doe@example.com'),
-    ('a4a25edc-22d0-492e-96df-c5f31037f38c', 'Jane Smith', 'jane.smith@example.com');
+    ('ba7991a3-22c3-473b-8421-676b714c2181', 'John Doe', 'john.doe@example.com'),
+    ('8bc247b0-bfa8-44d9-b1ff-0533655d74c9', 'Jane Smith', 'jane.smith@example.com'),
+    ('81f4a9ef-2cc3-422d-89fd-6ba7c4a5fda3', 'David D. Clifford', 'david.cli@example.com');
 
 -- Insert in addresses
 INSERT INTO addresses (id, street, city, state, postalCode, country, customerId)
 VALUES
-    ('555d0ed5-9292-4683-9f2a-8a542b77d852', '123 Main Street', 'Cityville', 'Stateville', '12345', 'Countryland', '62e44498-c817-417b-91b6-9ab2e691e2e5'),
-    ('e8cec812-e543-41ae-84f4-c6d8252b7a00', '456 Elm Avenue', 'Townsville', 'Countyville', '67890', 'Countryland', 'a4a25edc-22d0-492e-96df-c5f31037f38c');
+    ('b41a07a6-6cfc-4195-8579-c6bf0b605ea1', '2592 Boundary Street', 'Jacksonville', 'Florida', '32202', 'USA', 'ba7991a3-22c3-473b-8421-676b714c2181'),
+    ('6b155fb2-3be8-4fdc-8c00-947670d28644', '456 Elm Avenue', 'Hythe', 'Alberta', '67890', 'Canada', '8bc247b0-bfa8-44d9-b1ff-0533655d74c9'),
+    ('a432b04c-c380-46f9-bbc2-7b68240c557d', '1224 James Martin Circle', 'Columbus', 'Ohio', '43212', 'USA', '81f4a9ef-2cc3-422d-89fd-6ba7c4a5fda3');

@@ -14,23 +14,17 @@ public class CustomerRepository : ICustomerRepository
         _db = new MySqlConnection(connectionString.Value.ProjectConnection);
     }
 
-    public async Task<List<CustomerDto>> FindByCountry(string country) {
+    public async Task<List<CustomersByCountryDto>> FindByCountry(string country) {
         string query = @"select 
                             c.id,
-                            c.name, 
-                            c.email,
-                            a.id as addressId,
-                            a.street, 
-                            a.city, 
-                            a.state, 
-                            a.postalCode,
-                            a.country
+                            c.name,
+                            c.email
                         from customers c
                         inner join addresses a
                         on c.id = a.customerId
                         where a.country = @Country";
 
-       var customersByCountry = await _db.QueryAsync<CustomerDto>(query, new { Country = country });
+       var customersByCountry = await _db.QueryAsync<CustomersByCountryDto>(query, new { Country = country });
        return customersByCountry.ToList();
     }
 

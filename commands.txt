@@ -1,0 +1,3 @@
+dotnet new xunit -n CustomerProcessTest
+cd CustomerProcessTest
+dotnet add reference ../CustomerProcess.csproj

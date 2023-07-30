@@ -1,39 +1,114 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcessTest\\CustomerProcessTest.csproj": {}
+    "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcessTest/CustomerProcessTest.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcessTest\\CustomerProcessTest.csproj": {
+    "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcess/CustomerProcess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcessTest\\CustomerProcessTest.csproj",
-        "projectName": "CustomerProcessTest",
-        "projectPath": "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcessTest\\CustomerProcessTest.csproj",
-        "packagesPath": "C:\\Users\\assis.zang\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcessTest\\obj\\",
+        "projectUniqueName": "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcess/CustomerProcess.csproj",
+        "projectName": "CustomerProcess",
+        "projectPath": "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcess/CustomerProcess.csproj",
+        "packagesPath": "/Users/assiszang/.nuget/packages/",
+        "outputPath": "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcess/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\assis.zang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/assiszang/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcessTest/CustomerProcessTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcessTest/CustomerProcessTest.csproj",
+        "projectName": "CustomerProcessTest",
+        "projectPath": "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcessTest/CustomerProcessTest.csproj",
+        "packagesPath": "/Users/assiszang/.nuget/packages/",
+        "outputPath": "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcessTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/assiszang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcess\\CustomerProcess.csproj": {
-                "projectPath": "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcess\\CustomerProcess.csproj"
+              "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcess/CustomerProcess.csproj": {
+                "projectPath": "/Users/assiszang/Desktop/Projects/Telerik Blog/Learn ASP.NET Core Series/Nuget Packages 2/customer-management/CustomerProcess/CustomerProcess.csproj"
               }
             }
           }
@@ -89,87 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.109\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcess\\CustomerProcess.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcess\\CustomerProcess.csproj",
-        "projectName": "CustomerProcess",
-        "projectPath": "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcess\\CustomerProcess.csproj",
-        "packagesPath": "C:\\Users\\assis.zang\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\ASP.NET Core basics\\Nuget 2\\customer-management\\CustomerProcess\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\assis.zang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Mvc.Testing": {
-              "target": "Package",
-              "version": "[7.0.9, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "RestSharp": {
-              "target": "Package",
-              "version": "[110.2.0, )"
-            },
-            "xunit.extensibility.core": {
-              "target": "Package",
-              "version": "[2.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.109\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     }

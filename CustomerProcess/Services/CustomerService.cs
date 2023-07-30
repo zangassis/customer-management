@@ -1,5 +1,6 @@
 ﻿using CustomerProcess.Models;
 namespace CustomerProcess.Services;
+
 public class CustomerService
 {
     public string ValidateCustomer(Customer customer)
